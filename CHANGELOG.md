@@ -1,3 +1,113 @@
+4.0.1
+==
+
+## Bug Fixes
+
+ - [App crash on startup on Android 4.4](https://github.com/NativeScript/android-runtime/issues/999)
+
+4.0.0
+==
+
+## Breaking Changes
+
+ - [Rewrite the build script routine to no longer use flavors as the primary mechanism to apply nativescript plugin Android configurations (#890)](https://github.com/NativeScript/android-runtime/issues/890) - **If you see the `All flavors must now belong to a named flavor dimension.` build error, ensure that you are using the latest CLI. Plugins will be built implicitly by the CLI, version 4.0.0-rc or newer.**
+ - [Application package outputs are now located at `platforms/android/app/build/outputs/<build-type>/<flavor - if any>/app-<build-type>.apk` (#938)](https://github.com/NativeScript/android-runtime/issues/938)
+
+## What's New
+
+ - [Respect `.jar` and `.aar` libraries from `App_Resources/Android/libs` (#899)](https://github.com/NativeScript/android-runtime/issues/899)
+ - [Add user-defined Android project files - `.java`, resources, assets in `App_Resources/Android` (#700)](https://github.com/NativeScript/android-runtime/issues/700) - **Enabled after updating the App_Resources/Android subdirectory structure. Use `tns resources update android` with CLI 4.0.0-rc or newer.**
+ - [Console API improvements - file name, line, column support in Chrome DevTools; Objects are expanded to JSON representations (#894) (#884)](https://github.com/NativeScript/android-runtime/pull/894) - **Replaces the console API in the `tns-core-modules`.**
+ - [Update Gradle to 4.1 and Android plugin for Gradle to 3.0.1 (#938)](https://github.com/NativeScript/android-runtime/issues/938)
+
+## Bug Fixes
+
+ - [fix: static binding generator creating wrong files, when two extended classes have the same name (#692)](https://github.com/NativeScript/android-runtime/issues/692)
+
+3.4.2
+==
+
+## Bug Fixes
+
+ - [fix include gradle flavor generation for plugins with incomplete include.gradle scripts (#937)](https://github.com/NativeScript/android-runtime/pull/937)
+
+3.4.1
+==
+
+## Bug Fixes
+
+ - [Want help to access webview document height and cookies (#5243)](https://github.com/NativeScript/NativeScript/issues/5243)
+ - [Question about plugin using native lib NS 3.4 (#5254)](https://github.com/NativeScript/NativeScript/issues/5254)
+
+3.4.0
+==
+
+## What's New
+
+ - [Android Studio Integration (#876)](https://github.com/NativeScript/android-runtime/issues/876)
+
+## Bug Fixes
+
+ - [Faulty Java class name when extending a class inside a file containing dots (#761)](https://github.com/NativeScript/android-runtime/issues/761)
+
+3.3.1
+==
+
+## Bug Fixes
+
+ - [app.gradle applies before other plugin gradle scripts (#878)](https://github.com/NativeScript/android-runtime/issues/878)
+
+3.3.0
+==
+
+## Bug Fixes
+
+ - [Provide better error message while parsing js files (#833)](https://github.com/NativeScript/android-runtime/issues/833)
+ - [Improve JavaScript Metadata generation (#832)](https://github.com/NativeScript/android-runtime/issues/832)
+ - [Improve Error handling incorrectly implementing Java interface (#836)](https://github.com/NativeScript/android-runtime/issues/836)
+
+3.2.0
+==
+
+## Bug Fixes
+
+ - [Static binding generator fails when using Webpack + Workers (#778)](https://github.com/NativeScript/android-runtime/issues/778)
+
+3.1.1
+==
+
+## Bug Fixes
+ - [APKS with ABI split crash on start up (#785)](https://github.com/NativeScript/android-runtime/issues/785)
+
+3.1.0
+==
+
+## What's New
+ - [Chrome DevTools Elements Tab Support (#746)](https://github.com/NativeScript/android-runtime/issues/746)
+
+3.0.1
+==
+
+## Bug Fixes
+
+ - [--debug-brk flag not working (#2741)](https://github.com/NativeScript/nativescript-cli/issues/2741)
+ - [Clean app between different versions of application package. Ensure Android 6's AutoBackup feature doesn't restore files for NS apps](https://github.com/NativeScript/android-runtime/pull/771#issue-232247925)
+
+3.0.0
+==
+
+## What's New
+
+ - [Chrome DevTools Network Domain (#715)](https://github.com/NativeScript/android-runtime/issues/715)
+ - [Chrome DevTools Scope Tab (#713)](https://github.com/NativeScript/android-runtime/issues/713)
+ - [Enabling java source code or direct dex generation #663)](https://github.com/NativeScript/android-runtime/issues/663)
+ - [Improve Gradle incremental build (#562)](https://github.com/NativeScript/android-runtime/issues/562)
+
+
+## Bug Fixes
+
+ - [Javascript array not marshalling to Java long[] properly  (#696)](https://github.com/NativeScript/android-runtime/issues/696)
+ 
 2.5.0-RC
 ==
 

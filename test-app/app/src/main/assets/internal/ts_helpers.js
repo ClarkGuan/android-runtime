@@ -1,6 +1,9 @@
 (function() {
 	var __extends_ts = function (d, b) {
-	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+		if (!b.extend) {
+			for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+		}
+
 	    function __() { this.constructor = d; }
 	    __.prototype = b.prototype;
 	    d.prototype = new __();
@@ -52,7 +55,7 @@
 			function extend(child, parent) {
 				__log("TS extend called");
 				if (!child.__extended) {
-		        	child.__extended = parent.extend(child.name, child.prototype);
+		        	child.__extended = parent.extend(child.name, child.prototype, true);
 		        }
 		 
 		        return child.__extended;
@@ -116,9 +119,10 @@
 	    }
 	}
 	
-	global.__native = __native;
-	global.__extends = __extends;
-	global.__decorate = __decorate;
+	Object.defineProperty(global, "__native", { value: __native });
+	Object.defineProperty(global, "__extends", { value: __extends });
+	Object.defineProperty(global, "__decorate", { value: __decorate });
+
 	global.JavaProxy = JavaProxy;
 	global.Interfaces = Interfaces;
 })()

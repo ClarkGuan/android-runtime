@@ -2,16 +2,20 @@
 node_modules/
 dist/
 .gradle
-/test-app/build
-/test-app/libs
-/test-app/metadata
 .idea
 
 local.properties
 
 gen/
+scratch/
 obj/
 bin/
 .svn/
 
 **/.vscode/
+
+.project
+.DS_Store
+.settings
+
+.classpath

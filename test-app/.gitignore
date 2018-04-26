@@ -6,3 +6,21 @@
 .DS_Store
 /build
 /captures
+.externalNativeBuild
+app/app.iml
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/dictionaries
+.idea/libraries
+
+
+treeNodeStream.dat
+treeStringsStream.dat
+treeValueStream.dat
+NativeScriptActivity.java
+NativeScriptApplication.java
+**/com/tns/gen
